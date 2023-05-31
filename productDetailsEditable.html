@@ -472,6 +472,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="shop-grid-sidebar-left.html">Product</a></li>
                                     <li class="active" aria-current="page">Product Details</li>
+                                    <li class="active" aria-current="page">Edit Product</li>
                                 </ul>
                             </nav>
                         </div>
@@ -548,74 +549,71 @@
 
                         <!-- Start  Product Details Catagories Area-->
 
+                        <div class="product-details-variable">
 
-                      <!-- Start Product Variable Area -->
-                      <div class="product-details-variable">
+                            <div class="variable-single-item">
+                              <span>Color</span>
+                              <select class="product-variable-size">
+                                <option value="1">Select color</option>
+                                <option value="2" selected>Black</option>
+                                <option value="3">Blue</option>
+                                <option value="4">Grey</option>
+                              </select>
+                            </div>
 
+                            <div class="variable-single-item">
+                              <span>Size</span>
+                              <select class="product-variable-size">
+                                <option value="1">Select Size</option>
+                                <option value="2" selected>S</option>
+                                <option value="3">M</option>
+                                <option value="4">L</option>
+                                <option value="5">XL</option>
+                                <option value="6">XXL</option>
+                              </select>
+                            </div>
 
+                            <div class="variable-single-item">
+                              <span>Brand</span>
+                              <select class="product-variable-size">
+                                <option value="1">Select Brand</option>
+                                <option value="2" selected>Apple</option>
+                                <option value="3">Windows</option>
+                              </select>
+                            </div>
 
-                                <div class="variable-single-item">
-                                    <span>Color</span>
-                                    <select class="product-variable-size">
-                                        <option selected value="1">Select color</option>
-                                        <option value="2">Black</option>
-                                        <option value="3">Blue</option>
-                                        <option value="4">Grey</option>
+                            <div class="variable-single-item">
+                                <span>Reason</span>
+                                <textarea class="product-variable-reason" rows="5" style="width: 100%;" placeholder="Enter reason for product availability" selected></textarea>
+                            </div>
 
-                                    </select>
-                                </div>
+                            <div class="variable-single-item">
+                                <span>Date</span>
+                                <input type="date" class="product-variable-date" selected>
+                            </div>
 
-                                <div class="variable-single-item">
-                                        <span>Size</span>
-                                        <select class="product-variable-size">
-                                            <option selected value="1">Select Brand</option>
-                                            <option value="2">s</option>
-                                            <option value="3">m</option>
-                                            <option value="4">l</option>
-                                            <option value="5">xl</option>
-                                            <option value="6">xxl</option>
-                                        </select>
-                                </div>
-
-                                <div class="variable-single-item">
-                                        <span>Brand</span>
-                                        <select class="product-variable-size">
-                                            <option selected value="1">Selcect brand</option>
-                                            <option value="2">Apple</option>
-                                            <option value="3">Windows</option>
-
-                                        </select>
-                                </div>
-
-                                <div class="variable-single-item">
-                                    <span>Reason</span>
-                                    <textarea class="product-variable-reason" rows="5" style="width: 100%;" placeholder="Enter reason for product availability"></textarea>
-                                </div>
-
-                                <div class="variable-single-item">
-                                    <span>Date</span>
-                                    <input type="date" class="product-variable-date">
-                                </div>
-
-
-
-
-
-
-                        <div class="d-flex align-items-center ">
-                            <div class="variable-single-item ">
+                            <div class="d-flex align-items-center">
+                              <div class="variable-single-item">
                                 <span>Quantity</span>
                                 <div class="product-variable-quantity">
-                                    <input min="1" max="100" value="1" type="number">
+                                  <input min="1" max="100" value="1" type="number">
                                 </div>
+                              </div>
+
+                              <div class="product-add-to-cart-btn">
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalAddcart">Save Changes</a>
+                              </div>
                             </div>
 
-                            <div class="product-add-to-cart-btn">
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#modalAddcart">+ Add To Cart</a>
-                            </div>
-                        </div>
+                          </div>
 
-                      </div>
+
+                        <!-- Start  Product Details Catagories Area-->
+
+
+
+
+
 
 
 
@@ -722,3 +720,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
